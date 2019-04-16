@@ -1,3 +1,6 @@
+이미지 태그에 커서 변경되는 부분 제거
+
+---
 # Quill ImageResize Module
 
 A module for Quill rich text editor to allow images to be resized.

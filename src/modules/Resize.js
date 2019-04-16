@@ -96,7 +96,6 @@ export class Resize extends BaseModule {
     setCursor = (value) => {
         [
             document.body,
-            this.img,
         ].forEach((el) => {
             el.style.cursor = value;   // eslint-disable-line no-param-reassign
         });
