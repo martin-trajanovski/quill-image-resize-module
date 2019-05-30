@@ -5,9 +5,6 @@ import IconAlignRight from 'quill/assets/icons/align-right.svg';
 import { BaseModule } from './BaseModule';
 
 const Parchment = Quill.imports.parchment;
-// const FloatStyle = new Parchment.Attributor.Style('float', 'float');
-// const MarginStyle = new Parchment.Attributor.Style('margin', 'margin');
-// const DisplayStyle = new Parchment.Attributor.Style('display', 'display');
 
 const offsetAttributor = new Parchment.Attributor.Attribute('nameClass', 'class', {
 	scope: Parchment.Scope.INLINE,
@@ -68,13 +65,7 @@ export class Toolbar extends BaseModule {
 			button.addEventListener('click', () => {
 					// deselect all buttons
 				buttons.forEach(button => button.style.filter = '');
-				if (alignment.isApplied()) {
-						// If applied, unapply
-					// FloatStyle.remove(this.img);
-					// MarginStyle.remove(this.img);
-					// DisplayStyle.remove(this.img);
-				}else {
-						// otherwise, select button and apply
+				if (!alignment.isApplied()) {
 					this._selectButton(button);
 					alignment.apply();
 				}

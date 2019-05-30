@@ -1,4 +1,3 @@
-이미지 태그에 커서 변경되는 부분 제거
 
 ---
 # Quill ImageResize Module
