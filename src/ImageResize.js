@@ -212,7 +212,7 @@ if (window.Quill) {
 		'alt',
 		'height',
 		'width',
-		'style',
+		'align',
 	];
 
 	var BaseImageFormat = window.Quill.import('formats/image');
